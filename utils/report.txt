@@ -1,0 +1,29 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: tensorboard_logger.py
+--------------------------------------------------------------------------------
+tensorboard_logger.py:28:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'tensorboard_logger.py'
+ outputting to 'tensorboard_loggerv2.py'
+--------------------------------------------------------------------------------
+
+15:18: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+15:36: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+28:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+31:22: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+35:33: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+38:18: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+48:15: INFO: Renamed 'tf.HistogramProto' to 'tf.compat.v1.HistogramProto'
+65:18: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+65:36: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+--------------------------------------------------------------------------------
+
